@@ -1,0 +1,155 @@
+# index.js
+Goat.newVersionDetected=🌸✨ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴠᴇʀsɪᴏɴ %1, ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ ɪs %2. ᴘʟᴇᴀsᴇ ᴜᴘᴅᴀᴛᴇ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ʙᴇᴛᴛᴇʀ ʙʏ ᴛʏᴘɪɴɢ ɪɴᴛᴏ ᴛʜᴇ ᴄᴏɴsᴏʟᴇ/ᴄᴍᴅ ᴄᴏᴍᴍᴀɴᴅ: %3 🎀
+Goat.autoRestart1=🎀 ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏ ʀᴇsᴛᴀʀᴛ ɪɴ %1 💖
+Goat.autoRestart2=🌸 ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏ ʀᴇsᴛᴀʀᴛ ʙʏ ᴄʀᴏɴ ᴊᴏʙ: %1 ✨
+Goat.googleApiTokenExpired=❌ ɢᴏᴏɢʟᴇ ᴀᴘɪ ʀᴇғʀᴇsʜ ᴛᴏᴋᴇɴ ʜᴀs ᴇxᴘɪʀᴇᴅ ᴏʀ ʙᴇᴇɴ ʀᴇᴠᴏᴋᴇᴅ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴀ ɴᴇᴡ ᴛᴏᴋᴇɴ ᴀᴛ https://developers.google.com/oauthplayground/ 🎀
+
+# bot/login/login.js
+login.currentlyLogged=✨ ʟᴏɢɪɴ ɪɴ ᴘʀᴏɢʀᴇss 🌸
+login.notFoundDirAccount=❌ ᴄᴀɴɴᴏᴛ ғɪɴᴅ ғɪʟᴇ %1 🎀
+login.loginToken=🔑 ʟᴏɢɪɴ ᴡɪᴛʜ ᴀᴄᴄᴇss ᴛᴏᴋᴇɴ ✨
+login.loginCookieString=🍪 ʟᴏɢɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ sᴛʀɪɴɢ 💖
+login.loginCookieNetscape=🌐 ʟᴏɢɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ ɴᴇᴛsᴄᴀᴘᴇ 🌸
+login.loginCookieArray=📊 ʟᴏɢɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ ᴀʀʀᴀʏ 🎀
+login.loginPassword=🔐 ʟᴏɢɪɴ ᴡɪᴛʜ ᴇᴍᴀɪʟ & ᴘᴀssᴡᴏʀᴅ... ✨
+login.accountError=❌ ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏᴋᴇɴ ɪɴ ᴛʜᴇ ғᴏʀᴍ ᴏғ %1 ᴏʀ ᴄᴏᴏᴋɪᴇ ɪɴ ᴛʜᴇ ғᴏʀᴍ ᴏғ sᴛʀɪɴɢ %2 ᴏʀ ᴄᴏᴏᴋɪᴇ ɪɴ ᴛʜᴇ ғᴏʀᴍ ᴏғ ᴀʀʀᴀʏ:\n[\n  { ɴᴀᴍᴇ: %3, ᴠᴀʟᴜᴇ: %4 },\n  { ɴᴀᴍᴇ: %5, ᴠᴀʟᴜᴇ: %6 }\n]\n ᴏʀ\n[\n  { ᴋᴇʏ: %3, ᴠᴀʟᴜᴇ: %4 },\n  { ᴋᴇʏ: %5, ᴠᴀʟᴜᴇ: %6 }\n]\nɪɴᴛᴏ ᴛʜᴇ ғɪʟᴇ %7 🎀
+login.cannotFindAccount=❌ ᴄᴀɴɴᴏᴛ ғɪɴᴅ ғᴀᴄᴇʙᴏᴏᴋ ᴀᴄᴄᴏᴜɴᴛ, ᴄʜᴏᴏsᴇ ᴏɴᴇ ᴏғ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ᴏᴘᴛɪᴏɴs (ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴛᴏ ᴄʜᴏᴏsᴇ ᴏʀ ᴘʀᴇss ᴅᴏᴡɴ ᴀɴᴅ ᴜᴘ ᴛᴏ ᴄʜᴏᴏsᴇ ᴀɴᴅ ᴇɴᴛᴇʀ ᴛᴏ ᴄᴏɴғɪʀᴍ): 🌸
+login.chooseAccount=🎀 ʟᴏɢɪɴ ᴡɪᴛʜ ᴇᴍᴀɪʟ ᴀɴᴅ ᴘᴀssᴡᴏʀᴅ ✨
+login.chooseToken=💖 ʟᴏɢɪɴ ᴡɪᴛʜ ᴛᴏᴋᴇɴ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ 🌸
+login.chooseCookieString=✨ ʟᴏɢɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ sᴛʀɪɴɢ 🎀
+login.chooseCookieArray=🌸 ʟᴏɢɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ ᴀʀʀᴀʏ 💖
+login.loginWith=🎀 ʏᴏᴜ ᴄʜᴏᴏsᴇ ᴛᴏ %1 ✨
+login.inputEmail=🌸 » ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴇᴍᴀɪʟ (ɪᴅ) ᴏʀ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ ғᴀᴄᴇʙᴏᴏᴋ ᴀᴄᴄᴏᴜɴᴛ: 🎀
+login.inputPassword=✨ » ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴘᴀssᴡᴏʀᴅ: 💖
+login.input2FA=🌸 » ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ 2FA ᴄᴏᴅᴇ (ʟᴇᴀᴠᴇ ʙʟᴀɴᴋ ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ 2FA ᴇɴᴀʙʟᴇᴅ): 🎀
+login.inputToken=✨ » ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ (sᴛᴀʀᴛ ᴡɪᴛʜ EAAAA): 💖
+login.inputCookieString=🌸 » ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴄᴏᴏᴋɪᴇ sᴛʀɪɴɢ: 🎀
+login.inputCookieArray=✨ » ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴄᴏᴏᴋɪᴇ ᴀʀʀᴀʏ: 💖
+login.refreshCookie=🔄 ʀᴇғʀᴇsʜɪɴɢ ᴄᴏᴏᴋɪᴇ... 🌸
+login.refreshCookieError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ʀᴇғʀᴇsʜɪɴɢ ᴛʜᴇ ᴄᴏᴏᴋɪᴇ 🎀
+login.refreshCookieSuccess=✅ ʀᴇғʀᴇsʜᴇᴅ ᴄᴏᴏᴋɪᴇ sᴜᴄᴄᴇssғᴜʟʟʏ, ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴜsᴇ ᴛʜᴇ ɴᴇᴡ ᴄᴏᴏᴋɪᴇ ✨
+login.refreshCookieWarning=⚠️ ʏᴏᴜ ʜᴀᴠᴇ ᴇɴᴀʙʟᴇᴅ ᴛʜᴇ ᴀᴜᴛᴏ ʀᴇғʀᴇsʜ ᴄᴏᴏᴋɪᴇ ᴍᴏᴅᴇ, ʙᴜᴛ ʏᴏᴜ ʜᴀᴠᴇ ɴᴏᴛ ᴄᴏɴғɪɢᴜʀᴇᴅ ᴇᴍᴀɪʟ ᴀɴᴅ ᴘᴀssᴡᴏʀᴅ ɪɴ ᴛʜᴇ ғɪʟᴇ config.json 💖
+login.tokenError=❌ ᴛᴏᴋᴇɴ ɪs ɪɴᴠᴀʟɪᴅ ᴏʀ ᴇxᴘɪʀᴇᴅ. ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏᴋᴇɴ ɪɴ ᴛʜᴇ ғᴏʀᴍ ᴏғ %1 ɪɴᴛᴏ ᴛʜᴇ ғɪʟᴇ %2 🎀
+login.cookieError=❌ ᴄᴏᴏᴋɪᴇ ɪs ɪɴᴠᴀʟɪᴅ ᴏʀ ᴇxᴘɪʀᴇᴅ. 🌸
+login.loginPasswordError=❌ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ʟᴏɢɢɪɴɢ ɪɴ ᴡɪᴛʜ ᴇᴍᴀɪʟ & ᴘᴀssᴡᴏʀᴅ ɪɴ config.json ✨
+login.loginSuccess=💖 sᴜᴄᴄᴇssғᴜʟ ʟᴏɢɪɴ 🌸✨
+login.loginError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ sɪɢɴɪɴɢ ɪɴ 🎀
+login.openDashboardSuccess=✨ sᴜᴄᴄᴇssғᴜʟʟʏ ᴏᴘᴇɴᴇᴅ ʙᴏᴛ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴘᴀɢᴇ 💖
+login.openDashboardError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴏᴘᴇɴɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴘᴀɢᴇ 🌸
+login.changeGbanData=⚠️ ᴅᴀᴛᴀ ʜᴀs ʙᴇᴇɴ ᴄʜᴀɴɢᴇᴅ, ɪᴛ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ɪᴍᴘᴏssɪʙʟᴇ ᴛᴏ ʟᴀᴜɴᴄʜ ᴀ ʙᴏᴛ 🎀
+login.errorNoti=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ʀᴇᴛʀɪᴇᴠɪɴɢ ᴛʜᴇ ᴍᴇssᴀɢᴇ ✨
+login.refreshFbstateSuccess=🔄 ʀᴇғʀᴇsʜᴇᴅ %1 ғɪʟᴇ 💖
+login.refreshFbstateError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ʀᴇғʀᴇsʜɪɴɢ ᴛʜᴇ %1 ғɪʟᴇ 🌸
+login.youAreBanned=❌ ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴛʜᴇ Goat-Bot ᴘʀᴏᴊᴇᴄᴛ 🎀
+login.runBot=🚀 ʟᴀᴜɴᴄʜ ʙᴏᴛ sᴜᴄᴄᴇssғᴜʟʟʏ, sᴛᴀʀᴛ ʀᴇᴄᴇɪᴠɪɴɢ ᴍᴇssᴀɢᴇs ғʀᴏᴍ ᴜsᴇʀs ✨
+login.notLoggedIn=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ, ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ғᴀᴄᴇʙᴏᴏᴋ ᴀᴄᴄᴏᴜɴᴛ ᴀɢᴀɪɴ 💖
+login.callBackError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴄᴀʟʟʙᴀᴄᴋ ʟɪsᴛᴇɴᴍǫᴛᴛ 🌸
+login.userBanned=❌ ʏᴏᴜ'ᴠᴇ ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴜsɪɴɢ ᴀ ʙᴏᴛ!! 🎀
+login.checkGbanError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴄʜᴇᴄᴋɪɴɢ ɢʙᴀɴ, ᴛʀʏ ᴜᴘᴅᴀᴛᴇ sᴏᴜʀᴄᴇ ᴛᴏ ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ (ᴏᴘᴇɴ ᴄᴍᴅ ᴀɴᴅ ᴛʏᴘᴇ: ɴᴏᴅᴇ ᴜᴘᴅᴀᴛᴇ) ✨
+login.gbanMessage=🌸 » 𝖦𝖡𝖠𝖭 𝖭𝖮𝖳𝖨𝖥𝖨𝖢𝖠𝖳𝖨𝖮𝖭 « 🌸\n\n❌ ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴛʜᴇ Goat-Bot ᴘʀᴏᴊᴇᴄᴛ ᴏɴ %1 ғᴏʀ ᴛʜᴇ ʀᴇᴀsᴏɴ: %2\n» ᴛɪᴍᴇ: %3 🎀
+login.gbanMessageToDate=💖 » 𝖦𝖡𝖠𝖭 𝖭𝖮𝖳𝖨𝖥𝖨𝖢𝖠𝖳𝖨𝖮𝖭 « 💖\n\n❌ ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴛʜᴇ Goat-Bot ᴘʀᴏᴊᴇᴄᴛ ᴏɴ %1 ғᴏʀ ᴛʜᴇ ʀᴇᴀsᴏɴ: %2\n» ᴛɪᴍᴇ: %3\n» ᴛᴏ ᴅᴀᴛᴇ: %4 ✨
+login.gbanAdminMessage=📢 ᴜsᴇʀ %1 ʜᴀs ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴛʜᴇ Goat-Bot ᴘʀᴏᴊᴇᴄᴛ ᴏɴ %2 ғᴏʀ ᴛʜᴇ ʀᴇᴀsᴏɴ: %3 🌸
+login.openServerUptimeSuccess=🚀 ᴏᴘᴇɴᴇᴅ ᴜᴘᴛɪᴍᴇ sᴇʀᴠᴇʀ: %1 🎀
+login.openServerUptimeError=❌ ᴀɴ ᴇʀʀᴏʀ ʜᴀs ᴏᴄᴄᴜʀʀᴇᴅ, ᴄᴀɴɴᴏᴛ ᴏᴘᴇɴ sᴇʀᴠᴇʀ ᴜᴘᴛɪᴍᴇ ✨
+login.restartListenMessage=🔄 ʟɪsᴛᴇɴᴍǫᴛᴛ ʀᴇsᴛᴀʀᴛ ᴇɴᴀʙʟᴇᴅ ᴇᴠᴇʀʏ %1 💖
+login.stopRestartListenMessage=🛑 ʟɪsᴛᴇɴᴍǫᴛᴛ ʀᴇsᴛᴀʀᴛ ᴅɪsᴀʙʟᴇᴅ 🌸
+login.restartListenMessageError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ʀᴇsᴛᴀʀᴛɪɴɢ ʟɪsᴛᴇɴᴍǫᴛᴛ 🎀
+login.restartListenMessage2=✅ sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇsᴛᴀʀᴛᴇᴅ ʟɪsᴛᴇɴᴍǫᴛᴛ ✨
+login.refreshCookieAfter=🔄 ʀᴇғʀᴇsʜɪɴɢ ᴄᴏᴏᴋɪᴇ ᴀғᴛᴇʀ %1 💖
+login.listenMqttClose=🛑 ʟɪsᴛᴇɴᴍǫᴛᴛ ᴄʟᴏsᴇᴅ 🌸
+login.listenMqttCloseByUser=🛑 ʟɪsᴛᴇɴᴍǫᴛᴛ ᴄʟᴏsᴇᴅ ʙʏ ᴜsᴇʀ 🎀
+login.retryCheckLiveCookie=🔄 ʀᴇᴛʀʏɪɴɢ ᴛᴏ ᴄʜᴇᴄᴋ ᴄᴏᴏᴋɪᴇ... %1 ✨
+login.startBotSuccess=💖 ʙᴏᴛ ʜᴀs ʙᴇᴇɴ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ, sᴛᴀʀᴛ ʀᴇᴄᴇɪᴠɪɴɢ ᴍᴇssᴀɢᴇs ғʀᴏᴍ ᴜsᴇʀs 🌸✨
+
+version.tooOldVersion=❌ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴀ ᴛᴏᴏ ᴏʟᴅ ᴠᴇʀsɪᴏɴ ᴏғ Goat-Bot, ᴘʟᴇᴀsᴇ ᴜᴘᴅᴀᴛᴇ ᴛᴏ ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ ʙʏ ᴛʏᴘɪɴɢ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ: %1 ɪɴᴛᴏ ᴛʜᴇ ᴄᴍᴅ/ᴄᴏɴsᴏʟᴇ/ᴛᴇʀᴍɪɴᴀʟ/sʜᴇʟʟ 🎀
+
+# bot/custom.js
+custom.refreshedFb_dtsg=🔄 ʀᴇғʀᴇsʜᴇᴅ fb_dtsg ᴀɴᴅ jazoest sᴜᴄᴄᴇssғᴜʟʟʏ ✨
+custom.refreshedFb_dtsgError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ʀᴇғʀᴇsʜɪɴɢ fb_dtsg ᴀɴᴅ jazoest 🌸
+
+# bot/login/loadData.js
+loadData.loadThreadDataSuccess=✅ ʟᴏᴀᴅᴇᴅ %1 ɢʀᴏᴜᴘ's ᴅᴀᴛᴀ sᴜᴄᴄᴇssғᴜʟʟʏ! 🎀
+loadData.loadUserDataSuccess=✅ ʟᴏᴀᴅᴇᴅ %1 ᴜsᴇʀ's ᴅᴀᴛᴀ sᴜᴄᴄᴇssғᴜʟʟʏ! 💖
+loadData.refreshingThreadData=🔄 ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘs... ✨
+loadData.refreshThreadDataSuccess=✨ ᴜᴘᴅᴀᴛᴇᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏғ %1 ɢʀᴏᴜᴘ! 🌸
+loadData.refreshThreadDataError=❌ sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴡʜᴇɴ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ɢʀᴏᴜᴘs ɪɴғᴏʀᴍᴀᴛɪᴏɴ! 🎀
+
+# bot/login/loadScripts.js
+loadScripts.loadScriptsError=❌ ᴛʜᴇ %1 ғɪʟᴇs ʜᴀᴠᴇ ᴀɴ ᴇʀʀᴏʀ ᴅᴜʀɪɴɢ ʟᴏᴀᴅɪɴɢ: 💖
+loadScripts.loadScriptsNotMatchOrigin=⚠️ ᴛʜᴇ %1 ғɪʟᴇs ᴅᴏ ɴᴏᴛ ᴍᴀᴛᴄʜ ᴛʜᴇ ᴏʀɪɢɪɴᴀʟ ғɪʟᴇs ᴏɴ ᴛʜᴇ ɢɪᴛʜᴜʙ ᴘʀᴏᴊᴇᴄᴛ, ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ᴛʜᴇsᴇ ᴄᴏᴍᴍᴀɴᴅ ғɪʟᴇs ᴀʀᴇ ʀᴇʟɪᴀʙʟᴇ: ✨
+loadScripts.NOT_FOUND=🚫 ɴᴏᴛ ғᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴏʀɪɢɪɴᴀʟ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ: 🌸
+loadScripts.NOT_MATCH=⚠️ ᴅᴏᴇs ɴᴏᴛ ᴍᴀᴛᴄʜ ᴛʜᴇ ᴏʀɪɢɪɴᴀʟ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ: 🎀
+
+# bot/login/socketIO.js
+socketIO.connected=🌐 ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ sᴏᴄᴋᴇᴛ.ɪᴏ sᴇʀᴠᴇʀ ✨
+socketIO.error=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ ᴛʜᴇ sᴏᴄᴋᴇᴛ.ɪᴏ sᴇʀᴠᴇʀ 🌸
+
+# bot/handler/handlerCheckData.js
+handlerCheckData.cantCreateThread=❌ ɢʀᴏᴜᴘs ᴡɪᴛʜ ɪᴅ '%1' ᴄᴀɴɴᴏᴛ ʙᴇ ᴡʀɪᴛᴛᴇɴ ᴛᴏ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ! 🎀
+handlerCheckData.cantCreateUser=❌ ᴜsᴇʀs ᴡɪᴛʜ ɪᴅ '%1' ᴄᴀɴɴᴏᴛ ʙᴇ ᴡʀɪᴛᴛᴇɴ ᴛᴏ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ! 💖
+
+# bot/handler/handlerEvents.js
+handlerEvents.userBanned=🌸 » 𝖡𝖠𝖭𝖭𝖤𝖣 𝖲𝖳𝖠𝖳𝖴𝖲 « 🌸\n\n❌ ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ「ʙᴀɴɴᴇᴅ⛔」ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ\n» ʀᴇᴀsᴏɴ: %1\n» ᴛɪᴍᴇ: %2\n» ᴜsᴇʀ ɪᴅ: %3 🎀
+handlerEvents.threadBanned=💖 » 𝖡𝖠𝖭𝖭𝖤𝖣 𝖲𝖳𝖠𝖳𝖴𝖲 « 💖\n\n❌ ᴛʜɪs ɢʀᴏᴜᴘ ʜᴀs ʙᴇᴇɴ「ʙᴀɴɴᴇᴅ⛔」ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ\n» ʀᴇᴀsᴏɴ: %1\n» ᴛɪᴍᴇ: %2\n» ᴛʜʀᴇᴀᴅ ɪᴅ: %3 ✨
+handlerEvents.onlyAdminBox=⚠️ ᴛʜɪs ɢʀᴏᴜᴘ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴇɴᴀʙʟᴇᴅ ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ 🌸
+handlerEvents.onlyAdminBot=❌ | ᴄᴜʀʀᴇɴᴛʟʏ ᴏɴλʏ ʙᴏᴛ's ᴀᴅᴍɪɴ ᴄᴀɴ ᴜsᴇ ʙᴏᴛ 🎀
+handlerEvents.commandNotFound=❌ ᴄᴏᴍᴍᴀɴᴅ "%1" ᴅᴏᴇs ɴᴏᴛ ᴇxɪsᴛ, ᴛʏᴘᴇ「 %2ʜᴇʟᴘ 」ᴛᴏ sᴇᴇ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ✨
+handlerEvents.commandNotFound2=❌ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴅᴏᴇs ɴᴏᴛ ᴇxɪsᴛ, ᴛʏᴘᴇ「 %1ʜᴇʟᴘ 」ᴛᴏ sᴇᴇ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs 💖
+handlerEvents.commandSyntaxError=⚠️ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ɪs ᴡʀᴏɴɢ sʏɴᴛᴀx, ᴘʟᴇᴀsᴇ ᴛʏᴘᴇ %1ʜᴇʟᴘ %2 ᴛᴏ sᴇᴇ ᴛʜᴇ ᴅᴇᴛᴀɪʟs ᴏғ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ 🌸
+handlerEvents.onlyAdmin=❌ | ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ "%1" 🎀
+handlerEvents.onlyAdminToUseOnReply=❌ | ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʀᴇᴘʟʏ ғᴜɴᴄᴛɪᴏɴ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ "%1" ✨
+handlerEvents.onlyAdminToUseOnReaction=❌ | ᴏɴʟʏ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʀᴇᴀᴄᴛɪᴏɴ ғᴜɴᴄᴛɪᴏɴ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ "%1" 💖
+handlerEvents.onlyAdminBot2=❌ | ᴏɴʟʏ ʙᴏᴛ's ᴀᴅᴍɪɴ ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ "%1" 🌸
+handlerEvents.onlyAdminBot2ToUseOnReply=❌ | ᴏɴʟʏ ʙᴏᴛ's ᴀᴅᴍɪɴ ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʀᴇᴘʟʏ ғᴜɴᴄᴛɪᴏɴ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ "%1" 🎀
+handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | ᴏɴʟʏ ʙᴏᴛ's ᴀᴅᴍɪɴ ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʀᴇᴀᴄᴛɪᴏɴ ғᴜɴᴄᴛɪᴏɴ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ "%1" ✨
+handlerEvents.waitingForCommand=⏱ ʏᴏᴜ ᴀʀᴇ ɪɴ ᴛʜᴇ ᴡᴀɪᴛɪɴɢ ᴛɪᴍᴇ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ, ᴘʟᴇᴀsᴇ ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴀғᴛᴇʀ %1s 💖
+handlerEvents.errorOccurred=❌ [ %1 ]\nᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴀᴛ ᴄᴏᴍᴍᴀɴᴅ "%2"\n\n%3
+handlerEvents.errorOccurred2=❌ [ %1 ]\nᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴀᴛ ᴄᴏᴍᴍᴀɴᴅ ᴏɴᴄʜᴀᴛ ɪɴ ᴄᴏᴍᴍᴀɴᴅ "%2"\n\n%3
+handlerEvents.errorOccurred3=❌ [ %1 ]\nᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴇxᴇᴄᴜᴛɪɴɢ ᴏɴʀᴇᴘʟʏ ᴀᴛ ᴄᴏᴍᴍᴀɴᴅ "%2"\n\n%3
+handlerEvents.errorOccurred4=❌ [ %1 ]\nᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴇxᴇᴄᴜᴛɪɴɢ ᴏɴʀᴇᴀᴄᴛɪᴏɴ ᴀᴛ ᴄᴏᴍᴍᴀɴᴅ "%2"\n\n%3
+handlerEvents.errorOccurred5=❌ [ %1 ]\nᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴇxᴇᴄᴜᴛɪɴɢ ᴏɴᴇᴠᴇɴᴛ ᴀᴛ ᴄᴏᴍᴍᴀɴᴅ "%2"\n\n%3
+handlerEvents.errorOccurred6=❌ [ %1 ]\nᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴇxᴇᴄᴜᴛɪɴɢ ᴏɴᴇᴠᴇɴᴛ ᴀᴛ ᴄᴏᴍᴍᴀɴᴅ "%2"\n\n%3
+handlerEvents.errorOccurred7=❌ [ %1 ]\nᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴇxᴇᴄᴜᴛɪɴɢ ᴏɴᴀɴʏᴇᴠᴇɴᴛ ᴀᴛ ᴄᴏᴍᴍᴀɴᴅ "%2"\n\n%3
+handlerEvents.cannotFindCommandName=❌ ᴄᴀɴɴᴏᴛ ғɪɴᴅ ᴄᴏᴍᴍᴀɴᴅ ɴᴀᴍᴇ ᴛᴏ ᴇxᴇᴄᴜᴛɪɴɢ ᴛʜɪs ʀᴇᴘʟʏ! 🌸
+handlerEvents.cannotFindCommand=❌ ᴄᴀɴɴᴏᴛ ғɪɴᴅ ᴄᴏᴍᴍᴀɴᴅ "%1" ᴛᴏ ᴇxᴇᴄᴜᴛᴇ ᴛʜɪs ʀᴇᴘʟʏ! 🎀
+
+# bot/autoUptime.js
+autoUptime.autoUptimeTurnedOn=🚀 ᴀᴜᴛᴏᴜᴘᴛɪᴍᴇ ᴍᴏᴅᴇ ᴛᴜʀɴᴇᴅ ᴏɴ ✨
+
+# database/controller/index.js
+indexController.connectingMongoDB=🌐 ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴀ MongoDB ᴅᴀᴛᴀʙᴀsᴇ 💖
+indexController.connectMongoDBSuccess=✅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ MongoDB ᴅᴀᴛᴀʙᴀsᴇ! 🌸
+indexController.connectMongoDBError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛʜᴇ MongoDB ᴅᴀᴛᴀʙᴀsᴇ: 🎀
+indexController.connectingMySQL=🌐 ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴀ SQLite ᴅᴀᴛᴀʙᴀsᴇ ✨
+indexController.connectMySQLSuccess=✅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ SQLite ᴅᴀᴛᴀʙᴀsᴇ! 💖
+indexController.connectMySQLError=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ ᴀ SQLite ᴅᴀᴛᴀʙᴀsᴇ: 🌸
+
+# updater.js
+updater.updateTooFast=⚠️ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀᴛ ʟᴇᴀsᴛ 5 ᴍɪɴᴜᴛᴇs ᴀғᴛᴇʀ ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴄᴏᴍᴍɪᴛ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴡɪᴛʜᴏᴜᴛ ᴇʀʀᴏʀ, %1 ᴍɪɴᴜᴛᴇs %2 sᴇᴄᴏɴᴅs ʟᴇғᴛ 🎀
+updater.latestVersion=✨ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴠᴇʀsɪᴏɴ 💖
+updater.cantFindVersion=❌ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴀɴ ᴜɴᴅᴇғɪɴᴇᴅ ᴠᴇʀsɪᴏɴ (%1), ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ package.json ғɪʟᴇ ᴀɢᴀɪɴ 🌸
+updater.newVersions=🔄 ᴛʜᴇʀᴇ ᴀʀᴇ %1 ɴᴇᴡ ᴠᴇʀsɪᴏɴs ᴛᴏ ᴜᴘᴅᴀᴛᴇ, sᴛᴀʀᴛɪɴɢ ᴛᴏ ᴜᴘᴅᴀᴛᴇ... ✨
+updater.updateSuccess=✅ ᴜᴘᴅᴀᴛᴇ sᴜᴄᴄᴇssғᴜʟʟʏ %1 🎀
+updater.configChanged=⚠️ ᴛʜᴇ %1 ʜᴀs ʙᴇᴇɴ ᴄʜᴀɴɢᴇᴅ, ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ config.json ғɪʟᴇ ᴀɢᴀɪɴ 💖
+updater.installingPackages=📦 ɪɴsᴛᴀʟʟɪɴɢ ᴅᴇᴘᴇɴᴅᴇɴᴄɪᴇs ғᴏʀ ʙᴏᴛ... 🌸
+updater.installSuccess=✅ ɪɴsᴛᴀʟʟᴇᴅ ᴅᴇᴘᴇɴᴅᴇɴᴄɪᴇs sᴜᴄᴄᴇssғᴜʟʟʏ, ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴜsᴇ ᴛʜᴇ ɴᴇᴡ ᴠᴇʀsɪᴏɴ ✨
+updater.backupSuccess=📦 sᴜᴄᴄᴇssғᴜʟʟʏ ʙᴀᴄᴋᴇᴅ ᴜᴘ ᴄʜᴀɴɢᴇᴅ ғɪʟᴇs, sᴇᴇ ɪɴ ᴛʜᴇ %1 ғᴏʟᴅᴇʀ 🎀
+updater.restartToApply=🔄 ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴀᴘᴘʟʏ ᴛʜᴇ ɴᴇᴡ ᴠᴇʀsɪᴏɴ 💖
+updater.skipFile=⚠️ ᴛʜᴇʀᴇ ɪs ᴀ ɴᴇᴡ ᴠᴇʀsɪᴏɴ ᴏғ ᴛʜᴇ %1 ғɪʟᴇ, ʙᴜᴛ ʏᴏᴜ ʜᴀᴠᴇ sᴋɪᴘᴘᴇᴅ ᴛʜɪs ᴛʜɪs ғɪʟᴇ ᴅᴜʀɪɴɢ ᴛʜᴇ ᴜᴘᴅᴀᴛᴇ ᴘʀᴏᴄᴇss ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴍᴍᴇɴᴛ %2 ɪɴ ᴛʜɪs ғɪʟᴇ 🌸
+
+# dashboard/routes/verifyfbid.js
+verifyfbid.sendCode=🌸 » 𝖵𝖤𝖱𝖨𝖥𝖨𝖢𝖠𝖳𝖨𝖮𝖭 𝖢𝖮𝖣𝖤 « 🌸\n\n🔑 ʏᴏᴜʀ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴄᴏᴅᴇ ɪs:\n%1\n» ᴛʜᴇ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴄᴏᴅᴇ ɪs ᴠᴀʟɪᴅ ғᴏʀ %2 ᴍɪɴᴜᴛᴇs 🎀
+
+# utils.js
+utils.errorOccurred=❌ ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ:\n\n%1 ✨
+
+# for command
+command.restartedBot=🔄 ʙᴏᴛ ʜᴀs ʙᴇᴇɴ ʀᴇsᴛᴀʀᴛᴇᴅ 💖
+
+# dashboard/app.js
+app.googleApiRefreshTokenExpired=❌ ɢᴏᴏɢʟᴇ ᴀᴘɪ ʀᴇғʀᴇsʜ ᴛᴏᴋᴇɴ ʜᴀs ᴇxᴘɪʀᴇᴅ ᴏʀ ʙᴇᴇɴ ʀᴇᴠᴏᴋᴇᴅ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴀ ɴᴇᴡ ᴛᴏᴋᴇɴ ᴀᴛ https://developers.google.com/oauthplayground/ 🌸
+app.tooManyRequests=⚠️ ᴛᴏᴏ ᴍᴀɴʏ ʀᴇǫᴜᴇsᴛs ɪɴ ᴛʜᴇ ʟᴀsᴛ ᴍɪɴᴜᴛᴇ. ᴘʟᴇᴀsᴇ ᴛʜʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ. 🎀
+app.notPermissionChangeFbstate=❌ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ᴄʜᴀɴɢᴇ fbstate! ✨
+app.notFoundFbstate=⚠️ ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ fbstate! 💖
+app.changedFbstateSuccess=✅ sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʜᴀɴɢᴇᴅ fbstate! 🌸
+app.serverError=❌ sᴇʀᴠᴇʀ ᴀɴ ᴇʀʀᴏʀ, ᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ! 🎀
